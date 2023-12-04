@@ -1,0 +1,30 @@
+create database fusiondb;
+show databases;
+use fusiondb;
+
+create table employee(
+eid int(5),
+ename varchar(20),
+esal decimal,
+eadd varchar(50)
+
+);
+
+select * from employee;
+
+alter table employee add mobno bigint;
+select * from employee;
+
+alter table employee add gender char(10);
+select * from employee;
+
+insert into employee (eid,ename,esal,eadd,mobno,gender)
+values(101,"shrutika",50000,"pune",9567898899,"female");
+select * from employee;
+
+insert into employee values(102,"megha",40000,"ahmednagar",7788996676,"female");
+select * from employee;
+
+use fusion;
+
+select * from employee
